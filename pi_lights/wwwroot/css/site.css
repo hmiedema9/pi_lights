@@ -54,3 +54,115 @@ body {
   height: 60px;
   line-height: 60px; /* Vertically center the text there */
 }
+
+body {
+    width: 90%;
+    max-width: 840px;
+    margin: 0px auto;
+    padding: 2em;
+    box-sizing: border-box;
+    background: rgba(230, 229, 229, 1);
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    line-height: 1.3;
+}
+
+    body h2, body p {
+        padding: 0.5em 0;
+    }
+
+    body h2 {
+        border-bottom: 2px solid rgba(240, 66, 124, 1);
+    }
+
+#midi-controller {
+    padding: 1%;
+    background: #333 no-repeat top left;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 2px;
+    box-shadow: 2px 2px 4px 0px rgba(52, 50, 51, 1);
+}
+
+    #midi-controller section {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+.pad, .dial {
+    width: 25%;
+    min-width: 50px;
+    box-sizing: border-box;
+}
+
+.pad {
+    padding: 1%;
+}
+
+    .pad p {
+        font-size: 0.6em;
+        color: rgba(230, 229, 229, 1);
+    }
+
+    .pad button {
+        display: block;
+        width: 100%;
+        height: 70px;
+        box-sizing: border-box;
+        background: rgba(78, 75, 76, 1);
+        border: 3px solid rgba(230, 229, 229, 1);
+        border-radius: 2px;
+        box-shadow: 1px 1px 2px 0px black;
+        cursor: pointer;
+    }
+
+        .pad button:focus {
+            outline: none;
+        }
+
+        .pad button:active {
+            border-color: rgba(240, 66, 124, 1);
+        }
+
+#midi-data {
+    position: relative;
+    overflow: hidden;
+    height: 200px;
+    background: rgba(255, 255, 255, 0.9);
+    border: 10px solid rgba(240, 66, 124, 0.7);
+}
+
+    #midi-data ul {
+        position: absolute;
+        left: 0px;
+        bottom: 0px;
+        padding: 1em;
+    }
+
+        #midi-data ul li {
+            padding: 0.2em 0.2em 0.2em 1em;
+            font-size: 1.2em;
+            font-family: monospace;
+        }
+
+            #midi-data ul li:last-child, #midi-data ul li:nth-last-child(2) {
+                font-weight: bold;
+                animation: flash 1s;
+            }
+
+                #midi-data ul li:last-child:before, #midi-data ul li:nth-last-child(2):before {
+                    content: "> ";
+                    margin-left: -1em;
+                }
+
+@keyframes flash {
+    0% {
+        color: rgba(240, 66, 124, 1);
+    }
+
+    100% {
+        color: black;
+    }
+}

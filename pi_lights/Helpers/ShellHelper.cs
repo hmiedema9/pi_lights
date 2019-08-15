@@ -1,11 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 
 namespace pi_lights.Helpers
 {
-    public class ShellHelper
+    public static class ShellHelper
     {
         public static string Bash(this string cmd)
         {

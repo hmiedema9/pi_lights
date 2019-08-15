@@ -16,6 +16,11 @@ namespace pi_lights.Controllers
             return View();
         }
 
+        public IActionResult Midi()
+        {
+            return View();
+        }
+
         public IActionResult Privacy()
         {
             return View();
@@ -30,9 +35,16 @@ namespace pi_lights.Controllers
         
         public ActionResult LightUp()
         {
-            string command = "sudo PYTHON=\".:build/lib.linux-armv7l-2.7\" python /home/pi/rpi_ws281x/python/examples/strandtest.py";
+            string command = Constants.PYTHON_BASE + "strandtest.py";
             string result = ShellHelper.Bash(command);
             return Json(new { Message = result});
+        }
+
+        public ActionResult LightPaint()
+        {
+            string command = Constants.PYTHON_BASE + "lightpaint.py";
+            string result = ShellHelper.Bash(command);
+            return Json(new { Message = result });
         }
     }
 }

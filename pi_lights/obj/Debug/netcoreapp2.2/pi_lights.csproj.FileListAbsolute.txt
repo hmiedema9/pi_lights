@@ -28,3 +28,4 @@ C:\Users\mieds\source\repos\pi_lights\pi_lights\obj\Debug\netcoreapp2.2\pi_light
 C:\Users\mieds\source\repos\pi_lights\pi_lights\obj\Debug\netcoreapp2.2\pi_lights.dll
 C:\Users\mieds\source\repos\pi_lights\pi_lights\obj\Debug\netcoreapp2.2\pi_lights.pdb
 C:\Users\mieds\source\repos\pi_lights\pi_lights\obj\Debug\netcoreapp2.2\pi_lights.csproj.CopyComplete
+C:\Users\mieds\source\repos\pi_lights\pi_lights\obj\Debug\netcoreapp2.2\Razor\Views\Home\Midi.g.cshtml.cs
