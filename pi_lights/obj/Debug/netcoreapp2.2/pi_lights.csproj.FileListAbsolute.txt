@@ -1,6 +1,3 @@
-C:\Users\mieds\source\repos\pi_lights\pi_lights\obj\Debug\netcoreapp2.2\pi_lights.csproj.CoreCompileInputs.cache
-C:\Users\mieds\source\repos\pi_lights\pi_lights\obj\Debug\netcoreapp2.2\pi_lights.AssemblyInfoInputs.cache
-C:\Users\mieds\source\repos\pi_lights\pi_lights\obj\Debug\netcoreapp2.2\pi_lights.AssemblyInfo.cs
 C:\Users\mieds\source\repos\pi_lights\pi_lights\bin\Debug\netcoreapp2.2\pi_lights.deps.json
 C:\Users\mieds\source\repos\pi_lights\pi_lights\bin\Debug\netcoreapp2.2\pi_lights.runtimeconfig.json
 C:\Users\mieds\source\repos\pi_lights\pi_lights\bin\Debug\netcoreapp2.2\pi_lights.runtimeconfig.dev.json
@@ -9,8 +6,11 @@ C:\Users\mieds\source\repos\pi_lights\pi_lights\bin\Debug\netcoreapp2.2\pi_light
 C:\Users\mieds\source\repos\pi_lights\pi_lights\bin\Debug\netcoreapp2.2\pi_lights.Views.dll
 C:\Users\mieds\source\repos\pi_lights\pi_lights\bin\Debug\netcoreapp2.2\pi_lights.Views.pdb
 C:\Users\mieds\source\repos\pi_lights\pi_lights\obj\Debug\netcoreapp2.2\pi_lights.csprojAssemblyReference.cache
+C:\Users\mieds\source\repos\pi_lights\pi_lights\obj\Debug\netcoreapp2.2\pi_lights.csproj.CoreCompileInputs.cache
 C:\Users\mieds\source\repos\pi_lights\pi_lights\obj\Debug\netcoreapp2.2\pi_lights.RazorAssemblyInfo.cache
 C:\Users\mieds\source\repos\pi_lights\pi_lights\obj\Debug\netcoreapp2.2\pi_lights.RazorAssemblyInfo.cs
+C:\Users\mieds\source\repos\pi_lights\pi_lights\obj\Debug\netcoreapp2.2\pi_lights.AssemblyInfoInputs.cache
+C:\Users\mieds\source\repos\pi_lights\pi_lights\obj\Debug\netcoreapp2.2\pi_lights.AssemblyInfo.cs
 C:\Users\mieds\source\repos\pi_lights\pi_lights\obj\Debug\netcoreapp2.2\pi_lights.TagHelpers.input.cache
 C:\Users\mieds\source\repos\pi_lights\pi_lights\obj\Debug\netcoreapp2.2\pi_lights.TagHelpers.output.cache
 C:\Users\mieds\source\repos\pi_lights\pi_lights\obj\Debug\netcoreapp2.2\pi_lights.RazorCoreGenerate.cache
