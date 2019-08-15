@@ -126,6 +126,26 @@ body {
             border-color: rgba(240, 66, 124, 1);
         }
 
+    .pad a {
+        display: block;
+        width: 100%;
+        height: 70px;
+        box-sizing: border-box;
+        background: rgba(78, 75, 76, 1);
+        border: 3px solid rgba(230, 229, 229, 1);
+        border-radius: 2px;
+        box-shadow: 1px 1px 2px 0px black;
+        cursor: pointer;
+    }
+
+        .pad a:focus {
+            outline: none;
+        }
+
+        .pad a:active {
+            border-color: rgba(240, 66, 124, 1);
+        }
+
 #midi-data {
     position: relative;
     overflow: hidden;
