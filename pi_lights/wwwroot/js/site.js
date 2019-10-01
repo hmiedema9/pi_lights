@@ -127,11 +127,7 @@ var createMidiUxInput = function (onScreenMidiInput, data) {
     throw new Exception('Could not create Midi Input as data blob does not have a valid type property. Was "' + data.type + '"');
 };
 
-////////////////////////////////////
-
-// Setup for actually doing stuff
-
-// forEach utility method
+//util foreach
 var forEach = function (array, callback, scope) {
     for (var i = 0; i < array.length; i++) {
         callback.call(scope, i, array[i]); // passes back stuff we need
@@ -140,18 +136,7 @@ var forEach = function (array, callback, scope) {
 
 // Logging from MIDI Controller into a console 
 var midiEles = document.querySelectorAll('[data-midi]');
-var midi, data;
-
-// For real MIDI controllers you'd do something like what is commented out below.
-// But we don't need to do the async promise resolution thing, we can do this
-// synchronously by calling our onMIDISuccess() function with a FauxMidiAccess that
-// we have created (rather than one provided by requestMIDIAccess)
-//
-// if (navigator.requestMIDIAccess) {
-//   navigator.requestMIDIAccess({ sysex: false }).then(onMIDISuccess, onMIDIFailure);
-// } else {
-//   console.warn("No MIDI support in your browser")
-// }
+var midi, data
 var myOnScreenMidiInput = new OnScreenMidiInput(1);
 
 // Create a MidiUxInput for each html element, then connect event handlers
@@ -171,17 +156,10 @@ midi = new FauxMidiAccess(
 );
 
 onMIDISuccess(midi);
-
-// on success
-// This is the same code as though you were using a proper instance of MIDIAccess
-// that came from navigator.requestMIDIAccess
 function onMIDISuccess(midiData) {
-    // this is all our MIDI data
     midi = midiData;
     var allInputs = midi.inputs.values();
-    // loop over all available inputs and listen for any MIDI input
     for (var input = allInputs.next(); input && !input.done; input = allInputs.next()) {
-        // when a MIDI value is received call the onMIDIMessage function
         input.value.onmidimessage = gotMIDImessage;
     }
 }
