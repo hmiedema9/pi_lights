@@ -8,11 +8,19 @@ namespace pi_lights.Helpers
 {
     public static class ShellHelper
     {
+        private static Process _process;
+        private static bool _isRunning = false;
         public static string Bash(this string cmd)
         {
+            if (_isRunning)
+            {
+                _process.Kill();
+                _process.Dispose();
+                _process = null;
+            }
             var escapedArgs = cmd.Replace("\"", "\\\"");
 
-            var process = new Process()
+            _process = new Process()
             {
                 StartInfo = new ProcessStartInfo
                 {
@@ -23,9 +31,9 @@ namespace pi_lights.Helpers
                     CreateNoWindow = true,
                 }
             };
-            process.Start();
-            string result = process.StandardOutput.ReadToEnd();
-            process.WaitForExit();
+            _process.Start();
+            string result = _process.StandardOutput.ReadToEnd();
+            _process.WaitForExit();
             return result;
         }
     }
