@@ -32,8 +32,10 @@ namespace pi_lights.Helpers
                 }
             };
             _process.Start();
+            _isRunning = true;  
             string result = _process.StandardOutput.ReadToEnd();
             _process.WaitForExit();
+            _isRunning = false;
             return result;
         }
     }

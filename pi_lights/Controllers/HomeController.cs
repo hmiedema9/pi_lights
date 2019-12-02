@@ -46,5 +46,12 @@ namespace pi_lights.Controllers
             string result = ShellHelper.Bash(command);
             return Json(new { Message = result });
         }
+
+        public ActionResult Clear()
+        {
+            string command = Constants.PYTHON_BASE + "stop.py";
+            string result = ShellHelper.Bash(command);
+            return Json(new { Message = result });
+        }
     }
 }

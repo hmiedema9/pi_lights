@@ -7,6 +7,7 @@ namespace pi_lights.Helpers
 {
     public class Constants
     {
-        public static string PYTHON_BASE = "sudo PYTHON=\".:build/lib.linux-armv7l-2.7\" python /home/pi/rpi_ws281x/python/examples/";
+        //public static string PYTHON_BASE = "sudo PYTHON=\".:build/lib.linux-armv7l-2.7\" python /home/pi/rpi_ws281x/python/examples/";
+        public static string PYTHON_BASE = "sudo python /home/pi/rpi_ws281x/python/examples/";
     }
 }
